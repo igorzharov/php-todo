@@ -1,0 +1,197 @@
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+
+
+body
+{
+	display: flex;
+	background: #fafafa;
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+.container
+{
+	position: relative;
+	min-width: 300px;
+	width: 600px;
+	max-width: 600px;
+	padding: 20px;
+	margin: auto;
+}
+
+.h1
+{
+	margin-bottom: 20px;
+}
+
+.sorting p
+{
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.sorting ul,li
+{
+	padding: 0;
+	margin: 0 5px 10px 0;
+	list-style-type: none;
+	display: inline-block;
+}
+.sorting ul li a
+{
+	text-decoration: none;
+	color: #000000;
+}
+.sorting ul li a.sorting-active
+{
+	text-decoration: underline;
+}
+
+.post
+{
+	position: relative;
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+}
+.post:not(:first-of-type)
+{
+	margin-top: 20px;
+}
+
+.h3
+{
+	margin: 0 0 20px 0;
+}
+.h3 span
+{
+	font-size: 12px;
+	margin-left: 12px;
+	font-style: italic;
+	color: #555;
+}
+.text
+{
+	margin: 0;
+}
+
+.post .fa-check-circle {
+	position: absolute;
+	font-size: 20px;
+	top: 20px;
+	right: 20px;
+}
+.fa-check-circle.status-true {
+	color: #2ecc71;
+}
+.fa-check-circle.status-false {
+	color: #95a5a6;
+}
+
+.post .wrap
+{
+	text-align: right;
+}
+.post .wrap .button-editpost
+{
+	position: relative;
+	font-size: 20px;
+	display: inline-block;
+	margin-top: 20px;
+	color: #000000;
+}
+
+.post-status
+{
+	display: inline-block;
+	cursor: pointer;
+	font-size: 30px;
+}
+
+.pagination
+{
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(5, 40px);
+	grid-template-rows: 30px;
+	grid-column-gap: 10px;
+	justify-content: center;
+}
+.pagination a
+{
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	color: #ddd;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	text-decoration: none;
+	color: #000000;
+	font-weight: 700;
+}
+.pagination a:nth-child(3)
+{
+	background-color: #64e099;
+	border-color: #64e099;
+	color: #ffffff;
+}
+
+.pagination a.no-pagination
+{
+	background-color: #eee;
+}
+
+.zoom-anim-dialog {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 20px;
+	text-align: left;
+	max-width: 400px;
+	margin: auto;
+	position: relative;
+}
+
+.button
+{
+	display: block;
+	border: 1px solid #ddd;
+	padding: 10px 20px;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 20px;
+	color: #000000;
+	transition: border-color .2s ease;
+	background-color: #fff;
+	width: 100%;
+	cursor: pointer;
+	font-size: 16px;
+}
+.button:hover, .button:focus
+{
+	border-color: #2ecc71;
+	outline: none;
+}
+
+label
+{
+	display: block;
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+
+input,textarea
+{
+	padding: 5px 10px;
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid #ddd;
+	width: 100%;
+	margin-bottom: 20px;
+	resize: vertical;
+	max-height: 300px;
+}
